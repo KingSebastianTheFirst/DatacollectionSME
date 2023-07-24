@@ -63,7 +63,25 @@
     </div>
   </div>
 
-  <div id="data" class="page">
+  <div class="page" id="page-two">
+  <div class="container">
+    <h2>Datenerhebung</h2>
+    <p class="description">Liebe Teilnehmer, bitte geben Sie Ihre Informationen unten ein. Diese Informationen werden zur Bewertung Ihrer Emissionen im Vergleich zu anderen Unternehmen in Ihrer Branche verwendet.</p>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfvE3kBqQj86Ro97sN-pYRRDjfSU7oIC3bplcn3_U4brfVTjw/formResponse" method="POST" target="_self" id="data-collection-form">
+      <input type="text" name="entry.1416657203" placeholder="Name der Firma" required><br>
+      <input type="text" name="entry.1693930546" placeholder="Straße und Hausnummer des Firmensitzes" required><br>
+      <input type="text" name="entry.1339022167" placeholder="Postleitzahl des Firmensitzes" required><br>
+      <input type="text" name="entry.429878461" placeholder="Sektor der Firma (NACE level 4 sectors)" required><br>
+      <input type="text" name="entry.738453692" placeholder="Erhebungsjahr der folgenden Zahlen" required><br>
+      <input type="text" name="entry.80923268" placeholder="Scope 1 Emissionen (in tCO2e)" required><br>
+      <input type="text" name="entry.551258949" placeholder="Scope 2 Emissionen (in tCO2e)" required><br>
+      <input type="text" name="entry.1923166778" placeholder="Umsatz (in tausend EUR)" required><br>
+      <input type="email" name="entry.1234567890" placeholder="E-Mail Adresse für die Zusendung der Auswertung" required><br> <!-- replace 1234567890 with the correct entry number for the email field -->
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+</div>
+<!--   <div id="data" class="page">
     <h1>Datenerhebung</h1>
     <p>Bitte geben Sie hier die Informationen Ihres Unternehmens ein.</p>
     <form>
@@ -82,7 +100,7 @@
       <input type="email" name="email" placeholder="E-Mail Adresse für die Zusendung der Auswertung">
       <button type="button" class="button" onclick="navigate('thanks')">Submit</button>
     </form>
-  </div>
+  </div> -->
 
   <div id="thanks" class="page">
     <h1>Dankeschön</h1>

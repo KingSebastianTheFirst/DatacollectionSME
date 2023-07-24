@@ -52,9 +52,8 @@
     </div>
     <div class="right-side">
       <div class="logos">
-        <!-- Your logo images here -->
-        <!-- <img src="logo1.png" alt="Logo 1">
-        <img src="logo2.png" alt="Logo 2"> -->
+        <img src="Netzwerk Klimaschutz.png" alt="Netzwerk Klimaschutz">
+        <img src="Frankfurt_School_of_Finance_&_Management.jpg" alt="Frankfurt School of Finance & Management">
       </div>
       <div>
         <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
@@ -66,11 +65,19 @@
     <h1>Datenerhebung</h1>
     <p>Bitte geben Sie hier die Informationen Ihres Unternehmens ein.</p>
     <form>
-      <!-- Your form fields here -->
       <input type="text" name="company_name" placeholder="Name der Firma">
       <input type="text" name="address" placeholder="Straße und Hausnummer des Firmensitzes">
       <input type="text" name="zipcode" placeholder="Postleitzahl des Firmensitzes">
-      <!-- and so on -->
+      <select name="sector">
+          <option value="">Sektor der Firma</option>
+          <option value="0111">0111 - Growing of cereals (except rice), leguminous crops and oil seeds</option>
+          <option value="0112">0112 - Growing of rice</option>
+      </select>
+      <input type="number" name="year" placeholder="Erhebungsjahr der folgenden Zahlen">
+      <input type="number" name="scope1_emissions" placeholder="Scope 1 Emissionen (in tCO2e)">
+      <input type="number" name="scope2_emissions" placeholder="Scope 2 Emissionen (in tCO2e)">
+      <input type="number" name="revenue" placeholder="Umsatz (in tausend EUR)">
+      <input type="email" name="email" placeholder="E-Mail Adresse für die Zusendung der Auswertung">
       <button type="button" class="button" onclick="navigate('thanks')">Submit</button>
     </form>
   </div>
@@ -79,9 +86,8 @@
     <h1>Dankeschön</h1>
     <p>Vielen Dank für Ihre Teilnahme! Sie erhalten Ihre Bewertung innerhalb von zwei Werktagen.</p>
     <div class="logos">
-      <!-- Your logo images here -->
-      <!-- <img src="logo1.png" alt="Logo 1">
-      <img src="logo2.png" alt="Logo 2"> -->
+      <img src="Netzwerk Klimaschutz.png" alt="Netzwerk Klimaschutz">
+      <img src="Frankfurt_School_of_Finance_&_Management.jpg" alt="Frankfurt School of Finance & Management">
     </div>
   </div>
 
@@ -96,3 +102,4 @@
   </script>
 </body>
 </html>
+

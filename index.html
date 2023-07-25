@@ -71,11 +71,11 @@
       <input type="text" name="entry.1416657203" placeholder="Name der Firma" required><br>
       <input type="text" name="entry.1693930546" placeholder="Straße und Hausnummer des Firmensitzes" required><br>
       <input type="text" name="entry.1339022167" placeholder="Postleitzahl des Firmensitzes" required><br>
-      <select name="entry.1718510002_sentinel">
-          <option value="">Sektor der Firma</option>
-          <option value="0111">0111 - Growing of cereals (except rice), leguminous crops and oil seeds</option>
-          <option value="0112">0112 - Growing of rice</option>
-      </select>
+      <p>Sektor der Firma (NACE level 4 sectors)</p>
+        <input type="radio" id="nace0111" name="entry.1718510002_sentinel" value="0111 - Growing of cereals (except rice), leguminous crops and oil seeds">
+        <label for="nace0111">0111 - Growing of cereals (except rice), leguminous crops and oil seeds</label><br>
+        <input type="radio" id="nace0112" name="entry.1718510002_sentinel" value="0112 - Growing of rice">
+        <label for="nace0112">0112 - Growing of rice</label><br>
       <input type="text" name="entry.429878461" placeholder="Erhebungsjahr der folgenden Zahlen" required><br>
       <input type="text" name="entry.738453692" placeholder="Scope 1 Emissionen (in tCO2e)" required><br>
       <input type="text" name="entry.80923268" placeholder="Scope 2 Emissionen (in tCO2e)" required><br>
@@ -106,6 +106,19 @@
     </form>
   </div> -->
 
+<script>
+document.getElementById('data-collection-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  fetch(e.target.action, {
+    method: 'post',
+    body: new FormData(e.target),
+  }).then(response => {
+    // do something here like showing your own thank you message
+    navigate('thanks');
+  });
+});
+</script>
+  
   <div id="thanks" class="page">
     <h1>Dankeschön</h1>
     <p>Vielen Dank für Ihre Teilnahme! Sie erhalten Ihre Bewertung innerhalb von zwei Werktagen.</p>

@@ -49,7 +49,7 @@
   <div id="start" class="page visible">
     <h1>Emissionen im deutschen Mittelstand</h1>
     <div class="text">
-      <p>Kleine und mittelständische Unternehmen (KMU) können ihre Emissionsdaten hinzufügen und eine Bewertung erhalten, wie sie im Vergleich zu Mitbewerbern abschneiden. Die Daten werden nur für die Bewertung und für ein Forschungsprojekt der Frankfurt School of Finance & Management verwendet.</p>
+      <p>Das Unternehmensnetzwerk Klimaschutz der IHK und Frankfurt School erheben derzeit Emissionsdaten von Kleine und mittelständische Unternehmen (KMU). KMU können ihre Emissionsdaten im folgenden Fenster zur Verfügung stellen und erhalten im Gegenzug eine Einschätzung, wie sie im Vergleich zu Mitbewerbern abschneiden. Die erhobenen Daten werden nur für die Bewertung und für ein Forschungsprojekt der Frankfurt School of Finance & Management verwendet. Wir danken Ihnen für die Teilnahme.</p>
       <button class="button" onclick="navigate('page-two')">Start</button>
     </div>
     <div class="right-side">
@@ -66,7 +66,7 @@
   <div class="page" id="page-two">
   <div class="container">
     <h2>Datenerhebung</h2>
-    <p class="description">Liebe Teilnehmer, bitte geben Sie Ihre Informationen unten ein. Diese Informationen werden zur Bewertung Ihrer Emissionen im Vergleich zu anderen Unternehmen in Ihrer Branche verwendet.</p>
+    <p class="description">Bitte geben Sie alle Informationen unten ein. Nur bei vollständiger Eingabe der Informationen können wir eine Einschätzung zur Emissionsperformance ihrer Firma abgeben. Bitte beachten Sie die Maßeinheiten.</p>
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfvE3kBqQj86Ro97sN-pYRRDjfSU7oIC3bplcn3_U4brfVTjw/formResponse" method="POST" target="_self" id="data-collection-form">
       <input type="text" name="entry.1416657203" placeholder="Name der Firma" required><br>
       <input type="text" name="entry.1693930546" placeholder="Straße und Hausnummer des Firmensitzes" required><br>
@@ -80,7 +80,7 @@
       <input type="text" name="entry.738453692" placeholder="Scope 1 Emissionen (in tCO2e)" required><br>
       <input type="text" name="entry.80923268" placeholder="Scope 2 Emissionen (in tCO2e)" required><br>
       <input type="text" name="entry.551258949" placeholder="Umsatz (in tausend EUR)" required><br>
-      <input type="text" name="entry.1923166778" placeholder="E-Mail Adresse für die Zusendung der Auswertung" required><br>
+      <input type="text" name="entry.1923166778" placeholder="E-Mail Adresse für die Zusendung der Einschätzung" required><br>
       <button type="submit" class="button" onclick="navigate('thanks')">Submit</button>
     </form>
   </div>
@@ -121,7 +121,7 @@ document.getElementById('data-collection-form').addEventListener('submit', funct
   
   <div id="thanks" class="page">
     <h1>Dankeschön</h1>
-    <p>Vielen Dank für Ihre Teilnahme! Sie erhalten Ihre Bewertung innerhalb von zwei Werktagen.</p>
+    <p>Vielen Dank für Ihre Teilnahme! Sie erhalten die Einschätzung in Kürze per Mail.</p>
     <div class="logos">
       <img src="Netzwerk_Klimaschutz.png" alt="Netzwerk Klimaschutz">
       <img src="Frankfurt_School_of_Finance_Management.jpg" alt="Frankfurt School of Finance & Management">
